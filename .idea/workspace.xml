@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f7db258-afa4-4e8a-afa3-4e6d2335ff32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kaz/mazegame/DIRECTION.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Adventurer.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Adventurer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Block.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Entity.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Entity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Game.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/GamePanel$1.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/GamePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/GamePanel.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/GamePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Loc.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Loc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Main$KFrame.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Main$KFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Main.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Maze.class" afterPath="$PROJECT_DIR$/out/production/MazeAdventure/kaz/mazegame/Maze.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map.txt" afterPath="$PROJECT_DIR$/map.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Adventurer.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Adventurer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Block.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Block.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Entity.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Entity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Game.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Loc.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Loc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Main.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kaz/mazegame/Maze.java" afterPath="$PROJECT_DIR$/src/kaz/mazegame/Maze.java" />
     </list>
     <ignored path="MazeAdventure.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,25 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7811671">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -73,8 +42,11 @@
         <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,13 +110,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GamePanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state vertical-scroll-proportion="-2.7639258">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Loc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Loc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/kaz/mazegame/Adventurer.java" />
         <option value="$PROJECT_DIR$/src/kaz/mazegame/Main.java" />
         <option value="$PROJECT_DIR$/src/kaz/mazegame/DIRECTION.java" />
-        <option value="$PROJECT_DIR$/map.txt" />
         <option value="$PROJECT_DIR$/src/kaz/mazegame/Game.java" />
         <option value="$PROJECT_DIR$/src/kaz/mazegame/Loc.java" />
+        <option value="$PROJECT_DIR$/map.txt" />
         <option value="$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java" />
       </list>
     </option>
@@ -735,12 +720,12 @@
       <option name="number" value="Default" />
       <updated>1454391645973</updated>
       <workItem from="1454391648722" duration="7382000" />
-      <workItem from="1454436071216" duration="8949000" />
+      <workItem from="1454436071216" duration="9704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16331000" />
+    <option name="totallyTimeSpent" value="17086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2586" height="1394" extended-state="6" />
@@ -753,7 +738,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.235492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18632813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -807,7 +792,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,7 +877,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/DIRECTION.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -954,37 +937,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Loc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6061008">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26259947">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,12 +968,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7811671">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#775#776#0" expanded="true" />
             <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Loc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kaz/mazegame/GamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7639258">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

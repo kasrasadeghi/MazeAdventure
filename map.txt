@@ -1,8 +1,13 @@
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IA IOOO I       I  I    OOOOOOOOOOOOOOOOOOI
-I  IOOO I       I  I               OOOOOOOI
-I  IOOO IIII  III  IIIIIIIIII      OOOOOOOI
-I   OOO       OOO                  OOO    I
-I  IIIII      OOO  I               OOO    I
-I           OOOOOOOI                      I
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+IA IOOO I       I  I    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO                       I
+I  IOOO I       I  I           OOOOOOOOOOOOOOOOOOOOOOOOOOOO                      I
+I  IOOO IIII  III  IIIIIIIIII   OOOOOOOOOOOOOOOOOOOOOOOOOOOO                     I
+I   OOO                        OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO                   I
+I  IIIII      OOO  I            OOOOOOOOOOOOOOOOOOOOOOOOOOOOO             I    III
+I           OOOOOOOI             OOOOOOOOOOOOOOOOOOOOOOOOOO               I      I
+IIIIIIIIIIIIIIIIIIII              OOOOOOOOOOOOOOOOOOOOOOOO                I      I
+                   I               OOOOOOOOOOOOOOOOOOOO             IIIIIII      I
+                   I                 OOOOOOOOOOOOOOO                IOOO         I
+                   I                      OOOOOO                    IOO          I
+                   I                                                I            I
+                   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII

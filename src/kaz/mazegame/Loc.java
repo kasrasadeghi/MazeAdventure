@@ -34,6 +34,10 @@ public class Loc {
         this.c = c;
     }
 
+    public void set(Loc l) {
+        set(l.getR(), l.getC());
+    }
+
     public boolean equals(Object o){
         if (o instanceof Loc){
             Loc that = (Loc)o;

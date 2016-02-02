@@ -41,7 +41,7 @@ public class Game {
     }
 
     private void die() {
-
+        adv.set(maze.getAdvStart());
     }
 
     private void die(int row, int col) {

@@ -11,8 +11,8 @@ public class GamePanel extends JPanel {
     private Maze maze;
     private Game game;
 
-    private static int BLOCK_SIZE = 40;
-    private static int ADVENTURER_OFFSET = 5;
+    private final static int BLOCK_SIZE = 20;
+    private final static int ADVENTURER_OFFSET = 5;
 
     private int r, c;
 
