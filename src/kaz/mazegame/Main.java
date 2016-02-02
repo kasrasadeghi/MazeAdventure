@@ -1,6 +1,8 @@
 package kaz.mazegame;
 
 import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class Main {
     public static JFrame frame;
@@ -20,7 +22,16 @@ public class Main {
             super("Maze Adventure");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            add(new GamePanel());
+            GamePanel gp = new GamePanel();
+            addKeyListener(new KeyListener() {
+                public void keyTyped(KeyEvent keyEvent) {}
+                public void keyPressed(KeyEvent keyEvent) {
+                    gp.handleKeyEvent(keyEvent);
+                }
+                public void keyReleased(KeyEvent keyEvent) {}
+            });
+            add(gp);
+            
             pack();
             setVisible(true);
         }

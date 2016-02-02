@@ -10,6 +10,6 @@ public class Entity extends Loc {
         super(x, y);
     }
     public Entity(Loc l) {
-        super(l.getX(), l.getY());
+        super(l.getR(), l.getC());
     }
 }

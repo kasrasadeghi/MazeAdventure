@@ -5,29 +5,41 @@ package kaz.mazegame;
  */
 public class Loc {
     //basic position class
-    private int x, y;
+    private int r, c;
 
-    public Loc(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Loc(int r, int c) {
+        this.r = r;
+        this.c = c;
     }
 
-    public int getX() {return x;}
-    public int getY() {return y;}
+    public int getR() {return r;}
+    public int getC() {return c;}
 
     public double getDist(Loc l) {
-        return Math.sqrt(x*l.getX() + y*l.getY());
+        return Math.sqrt(r *l.getR() + c *l.getC());
     }
 
     public void move(Loc l) {
-        x += l.getX();
-        y += l.getY();
+        r += l.getR();
+        c += l.getC();
     }
 
-    public void move(int dx, int dy) {
-        x += dx;
-        y += dy;
+    public void move(int dr, int dc) {
+        this.r += dr;
+        this.c += dc;
     }
 
+    public void set(int r, int c) {
+        this.r = r;
+        this.c = c;
+    }
 
+    public boolean equals(Object o){
+        if (o instanceof Loc){
+            Loc that = (Loc)o;
+            if (this.getC() == that.getC() && this.getR() == this.getR())
+                return true;
+        }
+        return false;
+    }
 }
