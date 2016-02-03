@@ -11,7 +11,7 @@ public class GamePanel extends JPanel {
     private Maze maze;
     private Game game;
 
-    private final static int BLOCK_SIZE = 20;
+    private final static int BLOCK_SIZE = 25;
     private final static int ADVENTURER_OFFSET = 5;
 
     private int r, c;
@@ -71,16 +71,16 @@ public class GamePanel extends JPanel {
     protected void paintBlock(Graphics g, BLOCK b, int i, int j) {
         switch(b) {
             case AIR:
-                g.setColor(Color.CYAN);
+                g.setColor(Color.RED);
                 break;
             case WALL:
                 g.setColor(Color.GRAY);
                 break;
             case ADVENTURER_START:
-                g.setColor(Color.RED);
+                g.setColor(Color.YELLOW);
                 break;
             default:
-                g.setColor(Color.GREEN);
+                g.setColor(Color.BLACK);
                 break;
         }
         g.fillRect(j * BLOCK_SIZE, i * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);
