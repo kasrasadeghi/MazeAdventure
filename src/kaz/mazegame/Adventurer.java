@@ -6,13 +6,13 @@ package kaz.mazegame;
 public class Adventurer extends Actor {
     private DIRECTION direction;
 
-    public Adventurer(int x, int y) {
-        super(x, y);
+    public Adventurer(Maze maze) {
+        super(maze.getAdvStart(), maze);
         direction = DIRECTION.UP;
     }
 
-    public Adventurer(Loc l) {
-        super(l.getR(), l.getC());
+    public Adventurer(Loc l, Maze maze) {
+        super(l.getR(), l.getC(), maze);
         direction = DIRECTION.UP;
     }
 }

@@ -25,18 +25,19 @@ public class GamePanel extends JPanel {
     }
 
     public void handleKeyEvent(KeyEvent ke) {
+        Adventurer adv = game.getAdventurer();
         switch(ke.getKeyCode()) {
             case KeyEvent.VK_W:
-                game.move(DIRECTION.UP);
+                adv.move(DIRECTION.UP);
                 break;
             case KeyEvent.VK_A:
-                game.move(DIRECTION.LEFT);
+                adv.move(DIRECTION.LEFT);
                 break;
             case KeyEvent.VK_S:
-                game.move(DIRECTION.DOWN);
+                adv.move(DIRECTION.DOWN);
                 break;
             case KeyEvent.VK_D:
-                game.move(DIRECTION.RIGHT);
+                adv.move(DIRECTION.RIGHT);
                 break;
             case KeyEvent.VK_LEFT:
                 //attack left

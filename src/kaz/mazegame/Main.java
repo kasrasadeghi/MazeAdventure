@@ -9,7 +9,10 @@ public class Main {
     public static Game game;
 
     public static void main(String[] args) {
-        game = new Game("map.txt");
+        String fileName = "map.txt";
+        int size = 40;
+        MapGenerator.generateMap(size, size, fileName);
+        game = new Game(fileName);
         SwingUtilities.invokeLater(() ->  guiInit());
     }
 
@@ -31,7 +34,7 @@ public class Main {
                 public void keyReleased(KeyEvent keyEvent) {}
             });
             add(gp);
-            
+
             pack();
             setVisible(true);
         }

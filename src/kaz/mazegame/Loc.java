@@ -20,8 +20,8 @@ public class Loc {
     }
 
     public void move(Loc l) {
-        r += l.getR();
-        c += l.getC();
+        this.r += l.getR();
+        this.c += l.getC();
     }
 
     public void move(int dr, int dc) {
