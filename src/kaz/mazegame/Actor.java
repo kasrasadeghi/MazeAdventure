@@ -11,28 +11,35 @@ public class Actor extends Entity {
     public Actor(int x, int y, Maze m) {
         super(x, y, m);
         start = new Loc(x, y);
+        d = DIRECTION.UP;
     }
 
     public Actor(Loc l, Maze m) {
         super(l, m);
         start = l;
+        d = DIRECTION.UP;
     }
 
     public Loc getStart() {
         return start;
     }
 
-    public boolean move(DIRECTION d) {
+    public DIRECTION getDir() {
+        return d;
+    }
+
+    public boolean move(DIRECTION moveDir) {
         //if the direction is not a wall then move the actor there
+        d = moveDir;
         boolean complete = false;
-        int movedR = getR() + d.getUnitMove().getR();
-        int movedC = getC() + d.getUnitMove().getC();
+        int movedR = getR() + moveDir.getUnitMove().getR();
+        int movedC = getC() + moveDir.getUnitMove().getC();
         if (movedR < 0 || movedC < 0 ||
                 movedR >= getMaze().getRows() ||
                 movedC >= getMaze().getCols())
             return false;
         if (getMaze().getBlock(movedR, movedC) != BLOCK.WALL) {
-            move(d.getUnitMove());
+            move(moveDir.getUnitMove());
             complete = true;
         }
 

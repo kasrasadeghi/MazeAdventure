@@ -25,6 +25,9 @@ public class Maze {
     public BLOCK getBlock(int i, int j) {
         return blockGrid[i][j];
     }
+    public BLOCK getBlock(Loc l) {
+        return blockGrid[l.getR()][l.getC()];
+    }
     public Loc getAdvStart() {
         return advStart;
     }

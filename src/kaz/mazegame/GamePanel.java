@@ -1,8 +1,11 @@
 package kaz.mazegame;
 
+import kaz.mazegame.Monsters.Monster;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 /**
  * Created by kasra on 2/1/2016.
@@ -16,12 +19,19 @@ public class GamePanel extends JPanel {
 
     private int r, c;
 
-    public GamePanel() {
-        game = Main.game;
+    public GamePanel(Game game) {
+        this.game = game;
         maze = game.getMaze();
         r = maze.getRows();
         c = maze.getCols();
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
+    }
+
+    public void update() {
+        if (game.getMonsters().size() < 10)
+            game.spawnMonster();
+        game.getMonsters().forEach(a->a.move());
+        repaint();
     }
 
     public void handleKeyEvent(KeyEvent ke) {
@@ -88,12 +98,21 @@ public class GamePanel extends JPanel {
     }
 
     protected void paintActors(Graphics g) {
-
+        ArrayList<Monster> monster = game.getMonsters();
+        monster.forEach(m -> {
+            g.setColor(Color.ORANGE);
+            g.fillRect(m.getC() * BLOCK_SIZE + ADVENTURER_OFFSET, m.getR() * BLOCK_SIZE + ADVENTURER_OFFSET,
+                    BLOCK_SIZE - 2* ADVENTURER_OFFSET, BLOCK_SIZE - 2* ADVENTURER_OFFSET);
+        });
     }
 
     protected void paintAdventurer(Graphics g, Adventurer a) {
         g.setColor(Color.WHITE);
         g.fillRect(a.getC() * BLOCK_SIZE + ADVENTURER_OFFSET, a.getR() * BLOCK_SIZE + ADVENTURER_OFFSET,
                 BLOCK_SIZE - 2* ADVENTURER_OFFSET, BLOCK_SIZE - 2* ADVENTURER_OFFSET);
+        Polygon face = new Polygon();
+//        int h = BLOCK_SIZE/2;
+//        face.addPoint(a.getC() * BLOCK_SIZE + h, a.getR() * BLOCK_SIZE + h);
+
     }
 }

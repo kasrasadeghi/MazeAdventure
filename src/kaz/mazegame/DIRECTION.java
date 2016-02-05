@@ -14,4 +14,8 @@ public enum DIRECTION {
     public Loc getUnitMove() {
         return new Loc(row, col);
     }
+
+    public static DIRECTION getRandom() {
+        return values()[(int)(Math.random() * values().length)];
+    }
 }

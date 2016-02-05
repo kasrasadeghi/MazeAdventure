@@ -12,11 +12,26 @@ import java.io.UnsupportedEncodingException;
  * An attempt at learning cellular automata.
  */
 public class MapGenerator {
-    private static final int DEATH_LIMIT = 3;
-    private static final int BIRTH_LIMIT = 4;
-    private static final int STEP_COUNT = 7;
+    private int BIRTH_LIMIT;
+    private int DEATH_LIMIT;
+    private int STEP_COUNT;
+    private double PROBABILITY;
 
-    public static void generateMap(int w, int h, String filename) {
+    public MapGenerator() {
+        BIRTH_LIMIT = 4;
+        DEATH_LIMIT = 3;
+        STEP_COUNT = 4;
+        PROBABILITY = 0.35;
+    }
+
+    public MapGenerator(int DEATH, int BIRTH, int STEPS, double PROB) {
+        DEATH_LIMIT = DEATH;
+        BIRTH_LIMIT = BIRTH;
+        STEP_COUNT = STEPS;
+        PROBABILITY = PROB;
+    }
+
+    public void generateMap(int w, int h, String filename) {
         boolean[][] cellmap = initBitMap(w, h);
 
 
@@ -25,7 +40,7 @@ public class MapGenerator {
         printMap(cellmap);
     }
 
-    private static void printMap(boolean[][] map) {
+    private void printMap(boolean[][] map) {
         PrintWriter writer = null;
 
         try {
@@ -47,13 +62,12 @@ public class MapGenerator {
         }
     }
 
-    private static boolean[][] initBitMap(int r, int c) {
+    private boolean[][] initBitMap(int r, int c) {
         boolean[][] output = new boolean[r][c];
-        double probability = 0.40;
 
         for (int i = 0; i < r; ++i) {
             for (int j = 0; j < c; ++j) {
-                output[i][j] = Math.random() < probability;
+                output[i][j] = Math.random() < PROBABILITY;
             }
         }
 
@@ -61,7 +75,7 @@ public class MapGenerator {
     }
 
     @Contract(pure = true)
-    public static boolean[][] doStep(boolean[][] oldMap){
+    public boolean[][] doStep(boolean[][] oldMap){
         boolean[][] newMap = new boolean[oldMap.length][oldMap[0].length];
         //Loop over each row and column of the map
         for(int x=0; x<oldMap.length; x++){
@@ -78,7 +92,7 @@ public class MapGenerator {
     }
 
     @Contract(pure = true)
-    private static int countAlive(boolean[][] map, int r, int c){
+    private int countAlive(boolean[][] map, int r, int c){
         int count = 0;
         for (int i = -1; i < 2; ++i)
             for (int j = -1; j < 2; ++j) {

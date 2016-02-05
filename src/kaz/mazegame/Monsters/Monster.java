@@ -1,29 +1,32 @@
 package kaz.mazegame.Monsters;
 
 import kaz.mazegame.Actor;
+import kaz.mazegame.DIRECTION;
+import kaz.mazegame.Loc;
 import kaz.mazegame.Maze;
 
 /**
  * Created by Sarah M on 2/2/2016.
  */
 public class Monster extends Actor {
-    public Monster(int x, int y, Maze maze) {
-        super(x, y, maze);
+
+    public Monster(Loc l, Maze m) {
+        super(l, m);
     }
 
-    protected void eat() {
-
-    }
-
-    protected void die() {
+    public void eat() {
 
     }
 
-    protected void burn() {
+    public void die() {
 
     }
 
-    protected void move() {
+    public void burn() {
 
+    }
+
+    public void move() {
+        super.move(DIRECTION.getRandom());
     }
 }
