@@ -41,10 +41,19 @@ public class Game {
                 viable.add(new Loc(i, j));
 
         viable = viable.stream().filter(l -> maze.getBlock(l) != BLOCK.WALL)
-                .filter(l -> adv.getDist(l) > 4)
+                .filter(l -> adv.getDist(l) > 8)
                 .collect(Collectors.toCollection(ArrayList::new));
         Loc l = viable.get((int) (Math.random() * viable.size()));
 
         monsters.add(new Monster(l, maze));
+    }
+
+    public void update() {
+        // TODO: implement treasures and win condition
+        if (monsters.size() < 30)
+            spawnMonster();
+        monsters.forEach(Monster::move);
+        if(monsters.stream().anyMatch(m -> m.equals(adv)))
+            adv.die();
     }
 }

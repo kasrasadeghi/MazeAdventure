@@ -36,7 +36,7 @@ public class Main {
             new Thread() {
                 public void run() {
                     while(true) {
-
+                    game.update();
                     gp.update();
                     try {
                         sleep(100);

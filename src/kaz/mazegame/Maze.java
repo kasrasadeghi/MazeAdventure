@@ -39,6 +39,7 @@ public class Maze {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
         ArrayList<String> rows = new ArrayList<>();
         while (fileScanner.hasNext())
             rows.add(fileScanner.nextLine());

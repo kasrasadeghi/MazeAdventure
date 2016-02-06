@@ -14,7 +14,7 @@ public class GamePanel extends JPanel {
     private Maze maze;
     private Game game;
 
-    private final static int BLOCK_SIZE = 25;
+    private final static int BLOCK_SIZE = 20;
     private final static int ADVENTURER_OFFSET = 5;
 
     private int r, c;
@@ -28,9 +28,7 @@ public class GamePanel extends JPanel {
     }
 
     public void update() {
-        if (game.getMonsters().size() < 10)
-            game.spawnMonster();
-        game.getMonsters().forEach(a->a.move());
+
         repaint();
     }
 

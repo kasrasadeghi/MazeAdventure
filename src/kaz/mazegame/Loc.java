@@ -38,12 +38,22 @@ public class Loc {
         set(l.getR(), l.getC());
     }
 
-    public boolean equals(Object o){
-        if (o instanceof Loc){
-            Loc that = (Loc)o;
-            if (this.getC() == that.getC() && this.getR() == this.getR())
-                return true;
-        }
-        return false;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Loc)) return false;
+
+        Loc loc = (Loc) o;
+
+        if (r != loc.r) return false;
+        return c == loc.c;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = r;
+        result = 31 * result + c;
+        return result;
     }
 }

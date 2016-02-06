@@ -50,12 +50,12 @@ public class Actor extends Entity {
         return complete;
     }
 
-    private void die(int row, int col) {
+    public void die(int row, int col) {
         // TODO: handle tombstones or something i dunno
         die();
     }
 
-    private void die() {
+    public void die() {
         set(start);
     }
 

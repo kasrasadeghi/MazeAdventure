@@ -6,7 +6,7 @@ import kaz.mazegame.Loc;
 import kaz.mazegame.Maze;
 
 /**
- * Created by Sarah M on 2/2/2016.
+ * Created by KASRA on 2/2/2016.
  */
 public class Monster extends Actor {
 
