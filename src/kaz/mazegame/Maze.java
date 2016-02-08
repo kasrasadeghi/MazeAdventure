@@ -31,6 +31,9 @@ public class Maze {
     public Loc getAdvStart() {
         return advStart;
     }
+    public boolean isContained(Loc l ){
+        return !(l.getR() < 0 || l.getC() < 0 || l.getR() >= getRows() || l.getC() >= getCols());
+    }
 
     protected BLOCK[][] readMap(String fileName) {
         Scanner fileScanner = null;

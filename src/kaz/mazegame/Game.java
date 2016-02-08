@@ -1,6 +1,6 @@
 package kaz.mazegame;
 
-import kaz.mazegame.Monsters.Monster;
+import kaz.mazegame.Monsters.*;
 
 import java.util.ArrayList;
 import java.util.stream.Collector;
@@ -53,7 +53,7 @@ public class Game {
         if (monsters.size() < 30)
             spawnMonster();
         monsters.forEach(Monster::move);
-        if(monsters.stream().anyMatch(m -> m.equals(adv)))
+        if(monsters.stream().anyMatch(m -> m.same(adv)))
             adv.die();
     }
 }

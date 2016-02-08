@@ -35,15 +35,14 @@ public class Main {
 
             new Thread() {
                 public void run() {
-                    while(true) {
-                    game.update();
-                    gp.update();
-                    try {
-                        sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    }
+                    while(true)
+                        try {
+                            sleep(200);
+                            game.update();
+                            gp.update();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                 }
             }.start();
             add(gp);

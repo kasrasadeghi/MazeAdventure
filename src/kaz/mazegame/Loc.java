@@ -20,8 +20,8 @@ public class Loc {
     }
 
     public void move(Loc l) {
-        this.r += l.getR();
-        this.c += l.getC();
+        this.r += l.r;
+        this.c += l.c;
     }
 
     public void move(int dr, int dc) {
@@ -34,12 +34,20 @@ public class Loc {
         this.c = c;
     }
 
+    public Loc add(Loc l) {
+        return new Loc(r + l.r, c + l.c);
+    }
+
+    public Loc getDirLoc(DIRECTION d) {
+        return add(d.getUnitMove());
+    }
+
     public void set(Loc l) {
         set(l.getR(), l.getC());
     }
 
-    @Override
-    public boolean equals(Object o) {
+
+    public boolean same(Object o) {
         if (this == o) return true;
         if (!(o instanceof Loc)) return false;
 
@@ -47,13 +55,5 @@ public class Loc {
 
         if (r != loc.r) return false;
         return c == loc.c;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = r;
-        result = 31 * result + c;
-        return result;
     }
 }

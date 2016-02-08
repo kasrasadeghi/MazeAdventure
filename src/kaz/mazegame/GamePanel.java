@@ -1,6 +1,7 @@
 package kaz.mazegame;
 
 import kaz.mazegame.Monsters.Monster;
+import kaz.mazegame.Monsters.Zombie;
 
 import javax.swing.*;
 import java.awt.*;
@@ -75,6 +76,11 @@ public class GamePanel extends JPanel {
 
         paintActors(g);
         paintAdventurer(g, game.getAdventurer());
+        g.setColor(Color.CYAN);
+//        Zombie zombie = (Zombie)(game.getMonsters().get(0));
+//        int j = zombie.getTarget().getR();
+//        int i = zombie.getTarget().getC();
+//        g.fillRect(j * BLOCK_SIZE, i * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);
     }
 
     protected void paintBlock(Graphics g, BLOCK b, int i, int j) {
@@ -109,8 +115,26 @@ public class GamePanel extends JPanel {
         g.fillRect(a.getC() * BLOCK_SIZE + ADVENTURER_OFFSET, a.getR() * BLOCK_SIZE + ADVENTURER_OFFSET,
                 BLOCK_SIZE - 2* ADVENTURER_OFFSET, BLOCK_SIZE - 2* ADVENTURER_OFFSET);
         Polygon face = new Polygon();
-//        int h = BLOCK_SIZE/2;
-//        face.addPoint(a.getC() * BLOCK_SIZE + h, a.getR() * BLOCK_SIZE + h);
-
+        int h = BLOCK_SIZE/2;
+        face.addPoint(a.getC() * BLOCK_SIZE + h, a.getR() * BLOCK_SIZE + h);
+        switch(a.getDir()) {
+            case UP:
+                face.addPoint(a.getC() * BLOCK_SIZE, a.getR() * BLOCK_SIZE);
+                face.addPoint(a.getC() * BLOCK_SIZE + BLOCK_SIZE, a.getR() * BLOCK_SIZE);
+                break;
+            case RIGHT:
+                face.addPoint(a.getC() * BLOCK_SIZE + BLOCK_SIZE, a.getR() * BLOCK_SIZE);
+                face.addPoint(a.getC() * BLOCK_SIZE + BLOCK_SIZE, a.getR() * BLOCK_SIZE + BLOCK_SIZE);
+                break;
+            case LEFT:
+                face.addPoint(a.getC() * BLOCK_SIZE, a.getR() * BLOCK_SIZE);
+                face.addPoint(a.getC() * BLOCK_SIZE, a.getR() * BLOCK_SIZE + BLOCK_SIZE);
+                break;
+            case DOWN:
+                face.addPoint(a.getC() * BLOCK_SIZE, a.getR() * BLOCK_SIZE + BLOCK_SIZE);
+                face.addPoint(a.getC() * BLOCK_SIZE + BLOCK_SIZE, a.getR() * BLOCK_SIZE + BLOCK_SIZE);
+        }
+        g.setColor(Color.BLUE);
+        g.fillPolygon(face);
     }
 }

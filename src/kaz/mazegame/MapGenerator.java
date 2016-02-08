@@ -37,6 +37,7 @@ public class MapGenerator {
 
         for (int i = 0; i < STEP_COUNT; ++i)
             cellmap = doStep(cellmap);
+        //TODO: check quality and make sure person can interact with a large percentage of the map
         printMap(cellmap);
     }
 
@@ -77,12 +78,9 @@ public class MapGenerator {
     @Contract(pure = true)
     public boolean[][] doStep(boolean[][] oldMap){
         boolean[][] newMap = new boolean[oldMap.length][oldMap[0].length];
-        //Loop over each row and column of the map
         for(int x=0; x<oldMap.length; x++){
             for(int y=0; y<oldMap[0].length; y++){
                 int nbs = countAlive(oldMap, x, y);
-                //The new value is based on our simulation rules
-                //First, if a cell is alive but has too few neighbours, kill it.
                 if(oldMap[x][y])
                     newMap[x][y] = !(nbs < DEATH_LIMIT);
                 else newMap[x][y] = nbs > BIRTH_LIMIT;

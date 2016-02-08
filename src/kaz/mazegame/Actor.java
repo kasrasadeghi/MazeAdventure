@@ -38,6 +38,7 @@ public class Actor extends Entity {
                 movedR >= getMaze().getRows() ||
                 movedC >= getMaze().getCols())
             return false;
+
         if (getMaze().getBlock(movedR, movedC) != BLOCK.WALL) {
             move(moveDir.getUnitMove());
             complete = true;
